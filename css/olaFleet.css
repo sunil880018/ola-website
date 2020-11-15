@@ -1,0 +1,789 @@
+*{
+    padding: 0;
+    margin : 0;
+    box-sizing: border-box;
+}
+.container{
+    max-width: 1366px;
+    height: auto;
+    font-family: 'Open Sans', sans-serif;
+}
+.container i{
+    cursor: pointer;
+}
+.bar{
+    display: none;
+}
+.mobile-nav{
+    display: none;
+}
+header{
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 2;
+}
+.primary-nav-bar{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: black;
+    width: 100%;
+    height: 35px;
+    margin-right: 20px;
+}
+.primary-nav-bar a:hover{
+    color: #cce500;
+}
+.primary-nav-bar div{
+    margin-right: 22px;
+}
+.primary-nav-bar div a{
+    color:rgba(255, 255, 255, 0.8);;
+    text-decoration: none;
+    font-size: 12px;
+    margin-left: 10px;
+}
+.secondary-nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    box-shadow: 0px 0px 3px 0px #ccc;
+}
+.primary-logo{
+    margin-left: 75px;
+}
+.secondary-nav img{
+    height: 40px;
+}
+.secondary-nav-bar{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    padding: 12px;
+    margin-right: 50px;
+}
+.secondary-nav-bar div{
+    margin-right: 20px;
+    padding: 10px;
+}
+.secondary-nav-bar div a{
+    color:rgba(0, 0, 0, 0.8);;
+    text-decoration: none;
+    font-size: 14px;
+}
+.secondary-nav-bar div a:hover{
+    color: #cce500;
+}
+.secondary-nav-bar #button:hover{
+    color:#000;
+}
+.banner{
+    width: 100%;
+    height: 600px;
+    background: url('../images/fleet-banner.jpg') no-repeat center center/cover;
+    margin-top: 85px;
+}
+.banner h1{
+    text-align: center;
+    color: #fff;
+    margin-bottom: 6px;
+}
+.banner h1{
+    font-size: 34px;
+    padding-top: 266px;
+    font-weight: 600;
+}
+.form{
+    width: 400px;
+    height: 325px;
+    background-color: #f5f5f5;
+    margin: 40px 70px;
+    border-radius:4px ;
+}
+.sh{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.sh h4{
+    text-align: center;
+    color: #262626;
+    margin-bottom: 7px;
+}
+.source-des{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 20px;
+    border-bottom: 1px solid #ccc;
+}
+
+.source-des a{
+    color: black;
+    text-decoration: none;
+    padding: 0px 8px;
+    font-size: 14px;
+    border-radius: 30px;
+}
+.source-des a:hover{
+    color: #cce500;
+}
+.source-des #active:hover{
+    color: #262626;
+}
+.inputs{
+    padding: 10px;
+}
+.inputs .input{
+    display: flex;
+    flex-direction: row;
+    margin-top: 8px;
+    height: 40px;
+    background-color: #e6e6e6;
+    align-items: center;
+}
+.form button{
+    width: 95%;
+    margin-left: 10px;
+    height: 40px;
+    background-color: #cce500;
+    outline: none;
+    border: 1px solid #cce500;
+    font-size: 18px;
+}
+.carosel{
+    max-width: 90%;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: auto;
+    padding: 12px;
+    box-shadow: 0px 3px 9px -1px #ccc;
+    margin-top: -45px;
+    background-color: #fff;
+}
+.carosel .caro{
+    display: flex;
+    width: 100%;
+    padding: 10px;
+    align-items: center;
+    border-right: 1px solid #ccc;
+}
+.carosel .caro i{
+    font-size: 35px;
+}
+.carosel .caro .caro-details{
+    margin-left: 20px;
+}
+.car-ocassion{
+    width: 90%;
+    margin: auto;
+    margin-top: 80px;
+    margin-bottom: 40px;
+}
+.car-ocassion h1{
+    font-size: 30px;
+    font-weight: bold;
+}
+.card{
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    justify-content: center;
+    margin: auto;
+    grid-gap: 35px;
+    cursor: pointer;
+}
+.card-child{
+    box-shadow: 0px 0px 6px 0px #ccc;
+}
+.card-child img{
+    width: 100%;
+    height: 200px;
+}
+.card-child .small-car{
+    width: 64px;
+    height: 64px;
+    background-color: #cce500;
+    margin-top: -55px;
+    text-align: center;
+    border-radius: 50%;
+    margin-left: 270px;
+}
+.card-child .para{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    background-color: #f7f8fa;
+    margin-top: -6px;
+}
+.card-child .option{
+    padding: 20px;
+    background-color: #f7f8fa;
+}
+.option{
+    display: flex;
+    justify-content: space-between;
+}
+.option div{
+    display: flex;
+    align-items: center;
+}
+.option img{
+    width: 30px;
+    height: 30px;
+}
+.card2{
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap:60px;
+    justify-content: center;
+    margin: auto;
+}
+.card2-child{
+    display: flex;
+
+}
+.card2-child div{
+    margin-left: 20px;
+    padding-right: 30px;
+}
+.card2-child img{
+    width: 160px;
+    height: 100px;
+    border-radius: 5px;
+}
+.card2-child h3:hover{
+    color: #cce500;
+    cursor: pointer;
+}
+.card2-child p{
+    line-height: 1.6;color: #737373;
+    font-size: 15px;
+}
+.car-list{
+    width: 90%;
+    height: auto;
+    display: flex;
+    margin: auto;
+    justify-content: space-between;
+    align-items: center;
+}
+.car-list div{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.car-list img{
+    width: 80px;
+    padding: 14px;
+    border-radius: 50%;
+}
+
+
+.car-list img:hover{
+    background-color: #cce500;
+    cursor: pointer;
+    animation-name: example;
+    animation-name: example;
+    animation-duration: 1s
+}
+
+@keyframes example {
+    from {margin-left: -30px;}
+    to {margin-left: 0px;}
+  }
+
+.car-list p{
+    margin-bottom: 20px;
+    margin-top: 20px;
+    font-weight: bold;
+}
+.middle-banner{
+    width: 100%;
+    height: 500px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-image: linear-gradient(#f2f2f2, #fff);
+}
+.middle-banner img{
+    width: 500px;
+    height: 420px;
+}
+.middle-banner .pay-option{
+    display: flex;
+    flex-direction: column;
+    width: 27%;
+    margin-top: -150px;
+}
+.middle-banner .pay-option h1{
+    font-size: 35px;
+}
+.middle-banner .pay-option .pp{
+    font-size: 18px;
+    font-weight: bold;
+}
+.middle-banner .pay{
+    display: flex;
+    margin-top: 20px;
+}
+.middle-banner .pay i{
+    font-size: 20px;
+    margin: 0px 10px;
+    color: #666;
+}
+.last-banner{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-top: 1px solid #ccc;
+}
+.last-banner div h1{
+    font-size: 35px;
+}
+.last-banner img{
+    width: 140px;
+    height: 47px;
+    margin-right: 12px;
+    cursor: pointer;
+}
+.last-banner #img{
+    width: 33%;
+    height: 100%;
+    margin-top: 30px;
+}
+.last-banner .app-img{
+    display: flex;justify-content:space-between;margin-top: 40px;
+}
+.safety{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: 0px -6px 10px -8px #ccc;
+    background-color: #fff;
+}
+.safety-inner{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 22px 60px;
+}
+.safety-inner img{
+    width: 40px;
+    height: 40px;
+    margin-right: 14px;
+}
+.safety-inner p{
+    font-size: 14px;
+    color: #737373;
+    line-height: 1.6;
+    margin-top: 10px;
+}
+.footer{
+    width: 100%;
+    background-color: #393939;
+}
+
+.footer p{
+    color: #ccc;
+    cursor: pointer;
+}
+.footer p:hover{
+    color: #cce500;
+}
+.footer-list{
+    display: flex;
+    justify-content: space-around;
+    align-items:center ;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.footer .empty-p{
+    margin-left: 76px;width: 93%;
+    border-bottom: 1px solid #8c8c8c;
+}
+.footer-list div p{
+    font-size: 12px;
+    margin-top: 10px;
+}
+.social-links{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+.sos p{
+    margin-left: 57px;
+    font-size: 14px;
+}
+.india-icon{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #fff;
+}
+.india-icon i{
+    cursor: pointer;
+}
+.follow i{
+    font-size: 32px;
+    color: #fff;
+    margin: 0px 25px;
+    cursor: pointer;
+}
+.Discover-Ola{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.Discover-nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.Discover-nav a{
+    text-decoration: none;
+    color: #fff;
+    margin: 0px 20px;
+    font-size: 13px;
+}
+.driver{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.driver p{
+    margin: 0px 10px;
+    font-size: 13px;
+}
+
+.end-footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.end-footer p{
+    font-size: 14px;
+    margin: 0px 22px;
+}
+.end-footer img{
+    margin-left: 75px;
+    width: 90px;
+}
+.Notice{
+    display: flex;
+    justify-content: space-around;
+    padding: 30px 0px;
+}
+
+.copy-right{
+    display: flex;
+    justify-content: flex-end;
+    padding-bottom: 40px;
+}
+@media(max-width:1000px){
+    .secondary-nav-bar div{
+        padding: 0px;
+    }
+    .card{
+        grid-template-columns: repeat(2,1fr);
+        width: 300px;
+    }
+    .car-ocassion{
+        width: 600px;
+        text-align: center;
+    }
+    .card2{
+        grid-template-columns: 1fr 1fr;
+        width: 800px;
+    }
+    .car-list{
+        flex-direction: row;
+    overflow-x: auto;
+    width: 100%;
+    }
+    .car-list p{
+        font-size: 13px;
+    }
+    .car-list::-webkit-scrollbar{
+        width:0;
+    }
+    .footer{
+        flex-direction: column;
+    }
+    .footer-list{
+        flex-direction: column;
+    }
+    .social-links{
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        padding: 40px;
+    }
+    .Discover-Ola{
+        flex-direction: column;
+    }
+}
+@media(max-width:800px){
+    .secondary-nav-bar div{
+        padding: 0px;
+    }
+    .card{
+        grid-template-columns: 1fr;
+        width: 300px;
+    }
+    .car-ocassion{
+        width: 600px;
+        text-align: center;
+    }
+    .card2{
+        grid-template-columns: 1fr;
+        width: 500px;
+    }
+    .car-list{
+        flex-direction: row;
+    overflow-x: auto;
+    width: 100%;
+    }
+    .car-list p{
+        font-size: 13px;
+    }
+    .car-list::-webkit-scrollbar{
+        width:0;
+    }
+    .footer{
+        flex-direction: column;
+    }
+    .footer-list{
+        flex-direction: column;
+    }
+    .social-links{
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        padding: 40px;
+    }
+    .Discover-Ola{
+        flex-direction: column;
+    }
+}
+
+@media(max-width:460px){
+    .container{
+        width: 100%;
+        margin: auto;
+    }
+    header{
+        display: none;
+    }
+    .bar{
+        display: flex;
+        align-items: center;
+        position: absolute;
+        z-index: 2;
+        font-size: 25px;
+        padding: 10px 15px;
+        color: #505152;
+        background-color: #fff;
+        width: 100%;
+        opacity: 0.9;
+    }
+    .mobile-nav{
+        display: block;
+        position: absolute;
+        background-color: #f1f1f1;
+        z-index: 2;
+        width: 70%;
+        height: 100%;
+        margin-top: 52px;
+        opacity: 0.9;
+        transform: translateX(-1000px);
+        transition: transform 0.5s ease-in-out;
+    }
+    .mobile-nav ul{
+        list-style: none;
+    }
+    .mobile-nav li{
+        padding: 10px 25px;
+    }
+    .mobile-nav a{
+        text-decoration: none;
+        color: #000;
+        font-size: 15px;
+    }
+    .mobile-nav a:hover{
+        border-bottom: 1px solid #262626;
+    }
+    .show{
+        transform: translateX(0px);
+    }
+    .banner{
+        margin-top: 0px;
+    }
+    .banner h1{
+        font-size: 15px;
+        line-height: 1.7;
+        padding-top: 266px;
+    }
+    .form{
+        width: 100%;
+        margin: 0px;
+        margin-top: 30px;
+    }
+    .carosel{
+        width: 100%;
+        padding: 0px;
+        margin-top: 0px
+    }
+    .carosel .caro{
+        display: flex;
+        height: auto;
+        width: 100%;
+        padding: 0px;
+        border-right: 0;
+    }
+    .carosel #caro1,.carosel #caro2{
+        display: none;
+    }
+    .carosel .caro i{
+        font-size: 20px;
+    }
+    .car-ocassion h1{
+        font-size: 22px;
+    }
+    .car-ocassion p{
+        font-size: 13px;
+    }
+    .card{
+        grid-template-columns: 1fr;
+        width: 100%;
+        grid-gap: 30px;
+        justify-content: center;
+        margin: auto;
+    }
+    .card-child{
+        width: 100%; 
+    }
+    .car-ocassion{
+        width: 100%;
+    }
+    .card2{
+        width: 100%;
+        grid-gap: 25px;
+        padding: 0px 5px;
+    }
+    .card2-child img{
+        width: 120px;
+        height: 90px;
+    }
+    .car-list{
+        flex-direction: row;
+    overflow-x: auto;
+    width: 100%;
+    }
+    .car-list p{
+        font-size: 13px;
+    }
+    .car-list::-webkit-scrollbar{
+        width:0;
+    }
+    .middle-banner{
+        width: 100%;
+        flex-direction: column;
+        margin-top: 80px;
+    }
+    .middle-banner i{
+        display: none;
+    }
+    .middle-banner img{
+        width: 350px;
+        height: 300px;
+    }
+    .middle-banner div{
+        width: 100%;
+        padding: 0px;
+    }
+    .middle-banner .pay-option{
+        width: 98%;
+        margin-top: 0px;
+        padding: 0px 5px;
+    }
+    .middle-banner .pay-option h1{
+        font-size: 22px;
+    }
+    .middle-banner .pay-option .pp{
+        font-size: 13px;
+    }
+    .middle-banner .pay-option p{
+        font-size: 13px;
+    }
+    .safety{
+        flex-direction: column;
+    }
+    .safety-inner{
+        padding: 22px 10px;
+    }
+    .last-banner{
+        flex-direction: column;
+        padding: 0px 10px;
+    }
+    .last-banner img{
+        width: 90px;
+        height: 40px;
+        margin: 0px 14px;
+    }
+    .last-banner #img{
+        width: 300px;
+        height: 200px;
+    }
+    .last-banner div{
+        margin-top: 50px;
+    }
+    .last-banner div h1{
+        font-size: 22px;
+    }
+    .footer .empty-p{
+        margin-left: 76px;width: 60%;
+        border-bottom: 1px solid #8c8c8c;
+    }
+    .end-footer{
+        flex-direction: column;
+        margin-top: 30px;
+    }
+    .end-footer img{
+        margin-left: 0px;
+    }
+    .end-footer p{
+        margin: 0px 13px;
+    }
+    .Discover-nav{
+      flex-direction: column;
+      line-height: 2.7;
+    }
+    .india-icon {
+        padding: 7px;
+    }
+    .Notice{
+        flex-direction: row;
+    }
+    .social-links{
+        margin: 12px 0px;
+        padding: 17px 0px;
+    }
+    .follow{
+        margin: 40px 0px;
+    }
+    .sos p{
+        margin-left: -10px;
+    }
+}
